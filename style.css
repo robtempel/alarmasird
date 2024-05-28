@@ -1,0 +1,847 @@
+body{
+    background-color: rgb(54, 54, 54);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.cadabloque{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    padding: 5px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    width: 448px;
+    height: auto;
+    margin: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.subdivisionGris{
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px;
+    margin-top: 2px;
+    background-color: rgb(75, 75, 75);
+}
+
+.subdivisionVerde{
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px;
+    margin-top: 2px;
+    background-color: rgb(74, 149, 74);
+}
+
+.subdivisionRojo{
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px;
+    margin-top: 2px;
+    background-color: rgb(200, 75, 75);
+}
+
+.subdivisionRojoSRT{
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px;
+    margin-top: 2px;
+    animation: cambioDeColor 1s infinite;
+}
+
+.lucesitaNegro{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+
+    background-color: rgb(44, 44, 44);
+
+
+}
+
+.lucesitaRojo{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+
+    background-color: rgb(255, 159, 159);
+    box-shadow: 0px 0px 10px 5px rgba(245, 4, 4, 0.788);
+
+}
+
+.lucesitaYellow{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+
+    animation: cambioDeColor4 0.5s infinite;
+
+}
+
+@keyframes cambioDeColor4 {
+    0% {     background-color: rgb(255, 249, 159);
+        box-shadow: 0px 0px 10px 5px rgb(229, 245, 4, 0.788); }
+    100% {     background-color: rgb(255, 159, 159);
+        box-shadow: 0px 0px 10px 5px rgba(245, 4, 4, 0.788); }
+}
+
+.lucesitaGreen{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+    background-color: rgb(175, 255, 159);
+    box-shadow: 0px 0px 10px 5px rgba(44, 245, 4, 0.788);
+
+}
+
+.nombreird{
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    color: black;
+    display: inline-block;
+    padding: 2px;
+}
+
+.modulacionGris{
+    opacity: 0;
+    padding: 2px;
+    position: relative;
+    left: 2px;
+    display: inline-block;
+    width: 40px;
+}
+
+.modulacionVerde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    padding: 2px;
+    position: relative;
+    left: 2px;
+    border-radius: 8px 0px 0px 8px;
+    display: inline-block;
+    width: 40px;
+}
+
+.modulacionRojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    padding: 2px;
+    position: relative;
+    left: 2px;
+    border-radius: 8px 0px 0px 8px;
+    display: inline-block;
+    width: 40px;
+}
+
+.marginGris{
+    opacity: 0;
+    padding: 2px;
+    position: relative;
+    right: 2px;
+    border-radius: 0px 8px 8px 0px;
+    display: inline-block;
+    width: 50px;
+}
+
+.marginVerde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    padding: 2px;
+    position: relative;
+    right: 2px;
+    border-radius: 0px 8px 8px 0px;
+    display: inline-block;
+    width: 50px;
+}
+
+.marginRojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    padding: 2px;
+    position: relative;
+    right: 2px;
+    border-radius: 0px 8px 8px 0px;
+    display: inline-block;
+    width: 50px;    animation: cambioDeColor 1s infinite;
+}
+
+.vgris{
+    opacity: 0;
+    padding: 2px;
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 0px 0px 8px;
+    width: 25px;
+}
+
+.vverde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    padding: 2px;
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 0px 0px 8px;
+    width: 25px;
+}
+
+.vrojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    padding: 2px;
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 0px 0px 8px;
+    width: 25px;    animation: cambioDeColor 1s infinite;
+}
+
+@keyframes cambioDeColor {
+    0% { background-color: yellow; color: black; }
+
+    100% { background-color: rgb(207, 0, 0); color: black; }
+}
+
+.a1gris{
+    opacity: 0;
+    position: relative;
+    right: 3px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a1verde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    right: 3px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a1rojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    position: relative;
+    right: 3px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;    animation: cambioDeColor 1s infinite;
+}
+
+.a2gris{
+    opacity: 0;
+    position: relative;
+    right: 6px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a2verde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    right: 6px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a2rojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    position: relative;
+    right: 6px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a3gris{
+    opacity: 0;
+    position: relative;
+    right: 9px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a3verde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    right: 9px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a3rojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    position: relative;
+    right: 9px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a4gris{
+    opacity: 0;
+    position: relative;
+    right: 13px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a4verde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    right: 13px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.a4rojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    position: relative;
+    right: 13px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 2px;
+    display: inline-block;
+    width: 30px;
+}
+
+.statenc{
+    position: absolute;
+    padding: 3px;
+    border-radius: 4px;
+    width: 22px;
+    background-color: white;
+}
+
+.statencF{
+    opacity: 0;
+    position: absolute;
+
+    padding: 3px;
+    border-radius: 4px;
+    width: 22px;
+    background-color: white;
+}
+
+.statencLOCK{
+    position: absolute;
+
+    padding: 3px;
+    border-radius: 4px;
+    width: 22px;
+    background-color: white;    animation: cambioDeColor2 0.5s infinite;
+}
+
+.etiquetasrt{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    right: 10px;
+    color: black;
+    display: inline-block;
+    padding: 2px;
+}
+
+@keyframes cambioDeColor2 {
+    0% { background-color: rgb(255, 0, 0); color: black; }
+    100% { background-color: rgb(255, 208, 0); color: black; }
+}
+
+.parametrosgris{
+    background-color: rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
+    position: relative;
+    padding: 2px;
+    width: 215px;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.parametrosverde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    padding: 2px;
+    width: 215px;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.parametrosrojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    position: relative;
+    padding: 2px;
+    width: 215px;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.atmparametrosgris{
+    background-color: rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
+    position: relative;
+    left: 12px;
+    padding: 2px;
+    width: 180px;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.atmparametrosverde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    left: 12px;
+    padding: 2px;
+    width: 180px;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.atmparametrosrojo{
+    background-color: rgb(44, 44, 44);
+    color: red;
+    position: relative;
+    left: 12px;
+    padding: 2px;
+    width: 180px;
+    border-radius: 8px;
+    padding: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.lucesitarojo{
+
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    animation: cambioDeColor5 1s infinite;
+
+}
+
+@keyframes cambioDeColor5 {
+    0% {     background-color: rgb(255, 122, 122);
+        box-shadow: 0px 0px 10px 10px rgb(245, 4, 4, 0.788); }
+    100% {     background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0); }
+}
+
+
+
+
+.lucesitagris{
+
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+.lucesitaverde{
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(77, 255, 22);
+    animation: cambioDeColor3 0.1s infinite;
+}
+
+@keyframes cambioDeColor3 {
+    0% {     background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 5px rgb(77, 255, 22); }
+    100% {     background-color: rgb(160, 160, 160);
+        box-shadow: 0px 0px 10px 5px rgba(76, 255, 22, 0.548); }
+}
+
+.bandwithverde{
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    padding: 2px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 2px;
+
+    display: inline-block;
+    left: 20px;
+}
+
+.bandwithrojo{
+    opacity: 0;
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    padding: 2px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 2px;
+
+    display: inline-block;
+    left: 20px;
+}
+
+.bandwithgris{
+    opacity: 0;
+    background-color: rgb(44, 44, 44);
+    color: greenyellow;
+    position: relative;
+    padding: 2px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 2px;
+
+    display: inline-block;
+    left: 20px;
+}
+
+
+.cadabloqueateme{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    width: 305px;
+    background-color: rgb(75, 75, 75);
+    border-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: outset;
+
+}
+
+.cadabloqueericsson{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 75);
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: outset;
+    width: 259px;
+    margin-top: 2px;
+}
+
+.lucesitaEricssonNegro{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+
+    background-color: rgb(44, 44, 44);
+
+
+}
+
+.lucesitaEricssonRojo{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+
+    background-color: rgb(255, 159, 159);
+    box-shadow: 0px 0px 10px 5px rgba(245, 4, 4, 0.788);
+
+}
+
+.lucesitaEricssonYellow{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+
+    animation: cambioDeColor4 0.5s infinite;
+
+}
+
+
+.lucesitaEricssonGreen{
+    width: 3px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 10px;
+    background-color: rgb(175, 255, 159);
+    box-shadow: 0px 0px 10px 5px rgba(44, 245, 4, 0.788);
+
+}
+
+.cadabloquesrt{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 5px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: outset;
+    text-align: center;
+    width: 448px;
+    margin: 3px;
+}
+
+.nombreirdsrt{
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    color: black;
+    display: inline-block;
+    padding: 2px;
+}
+
+.parametros414gris{
+    background-color: rgb(75, 75, 75);
+    padding: 2px;
+    width: 215px;
+    position: relative;
+    left: 17px;
+    border-radius: 8px;
+    color: rgb(190, 190, 190);
+    display: inline-block;
+}
+
+.parametros414verde{
+    background-color: rgb(44, 44, 44);
+    padding: 2px;
+    width: 215px;
+    position: relative;
+    left: 17px;
+    border-radius: 8px;
+    color: greenyellow;
+    display: inline-block;
+}
+
+.parametros414rojo{
+    background-color: rgb(44, 44, 44);
+    padding: 2px;
+    width: 215px;
+    position: relative;
+    left: 17px;
+    border-radius: 8px;
+    color: red;
+    display: inline-block;
+}
+
+.lucesita414linkgris{
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lucesita414linkrojo{
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    animation: cambioDeColor5 1s infinite
+}
+
+.lucesita414linkverde{
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+    animation: cambioDeColor3 0.1s infinite
+}
+
+.lucesita414gris{
+    width: 3px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    top: 3px;
+    margin-left: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.lucesita414rojo{
+    width: 3px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    top: 3px;
+    margin-left: 15px;
+    background-color: red;
+
+}
+
+.lucesita414verde{
+    width: 3px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    top: 3px;
+    margin-left: 15px;
+    background-color: greenyellow;
+
+}
+
+.lucesita414mediagris{
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    left: 25px;
+    bottom: 3px;
+    background-color: rgb(34, 34, 34);
+}
+
+.lucesita414mediarojo{
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    left: 25px;
+    bottom: 3px;
+    background-color: #b2b7ff;
+    box-shadow: 0px 0px 10px 5px rgba(36, 40, 250, 0.596);
+}
+
+.lucesita414mediaverde{
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    left: 25px;
+    bottom: 3px;
+    background-color: rgb(34, 34, 34);
+}
+
+.cadabloquesdm{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 75);
+    padding: 5px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.modulacionsdm{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    position: relative;
+    left: 2px;
+    border-radius: 8px 0px 0px 8px;
+    display: inline-block;
+    width: 65px;
+
+}
+
+.margensdmYellow{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    position: relative;
+
+    border-radius: 0px 8px 8px 0px;
+    display: inline-block;
+    width: 65px;
+    animation: cambioDeColor 1s infinite
+}
+
+.margensdm{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    position: relative;
+    border-radius: 0px 8px 8px 0px;
+    display: inline-block;
+    width: 80px;
+}
